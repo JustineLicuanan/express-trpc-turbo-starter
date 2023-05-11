@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "prettier": {
+    "$schema": "https://json.schemastore.org/prettierrc",
+    "quoteProps": "as-needed",
+    "singleQuote": true,
+    "arrowParens": "always",
+    "tabWidth": 2,
+    "useTabs": false,
+    "printWidth": 100,
+    "proseWrap": "always",
+    "bracketSpacing": true,
+    "trailingComma": "es5",
+    "semi": true,
+    "jsxSingleQuote": false,
+    "bracketSameLine": false,
+    "pluginSearchDirs": false,
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ]
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "cmt": "git add -A && git commit -m",
+    "push": "git push origin"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-turbo": "^1.9.3",
+    "prettier": "^2.5.1",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "turbo": "^1.9.3"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "name": "express-trpc-turbo-starter"
+}
