@@ -21,10 +21,14 @@
     ]
   },
   "scripts": {
+    "studio": "pnpm -F api studio",
+    "db:push": "pnpm -F api db:push",
+    "db:seed": "pnpm -F api db:seed",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write .",
+    "start": "pnpm -F api start",
     "cmt": "git add -A && git commit -m",
     "push": "git push origin"
   },

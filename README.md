@@ -1,6 +1,6 @@
 # tRPC Express Turborepo starter
 
-This is an Express.js with tRPC starter Turborepo.
+This is an Express.js with tRPC & Prisma starter Turborepo.
 
 ## Utilities
 
@@ -10,12 +10,13 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
-## Build
+## Push to Database
 
-To build all apps and packages, run the following command:
+To push to database, run the following command:
 
 ```bash
-pnpm build
+cp apps/api/.env.example apps/api/.env
+pnpm db:push
 ```
 
 ## Develop
