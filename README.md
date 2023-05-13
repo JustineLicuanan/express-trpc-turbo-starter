@@ -2,6 +2,16 @@
 
 This is an Express.js with tRPC & Prisma starter Turborepo.
 
+## Using this starter
+
+Run the following command:
+
+```sh
+npx degit JustineLicuanan/express-trpc-turbo-starter my-new-project
+cd my-new-project
+pnpm i
+```
+
 ## Utilities
 
 This Turborepo has some additional tools already setup for you:
@@ -14,7 +24,7 @@ This Turborepo has some additional tools already setup for you:
 
 To push to database, run the following command:
 
-```bash
+```sh
 cp apps/api/.env.example apps/api/.env
 pnpm db:push
 ```
@@ -23,6 +33,6 @@ pnpm db:push
 
 To develop all apps and packages, run the following command:
 
-```bash
+```sh
 pnpm dev
 ```
