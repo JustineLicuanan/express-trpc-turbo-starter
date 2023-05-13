@@ -1,9 +1,9 @@
 import { createExpressMiddleware } from '@trpc/server/adapters/express';
 import cors from 'cors';
 import express from 'express';
-import { createContext } from './configs/context.config';
 import { env } from './env';
 import { appRouter } from './routers';
+import { createContext } from './utils/trpc.util';
 
 const app = express();
 
